@@ -107,3 +107,16 @@ Renommages effectués :
 - Pas de support des régions Gerber natives (G36/G37) à la lecture
 - Pas de support du format Excellon (.DRL)
 - Les courbes SVG (bézier, arcs) sont linéarisées en segments
+
+## Quelques images
+- Choix d'un dessin SVG
+![un dessin SVG](svg.png)
+
+- Edition du fichier Gerber converti en SVG via Inkscape
+![edition du gerber converti dans inkscape](edit-gerber-svg.png)
+
+- Importation du dessin dans le calque dédié
+![import du dessing dans le calque](import-svg-image.png)
+
+- Apercu du Gerber reconstitué apres convertion du SVG en gerber
+![fichier gerber reconstitué](final.png)
