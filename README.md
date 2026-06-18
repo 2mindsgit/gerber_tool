@@ -2,9 +2,18 @@
 
 Outil de conversion **Gerber ↔ SVG** pour éditer des fichiers Gerber (sérigraphie, cuivre, masque…) dans Inkscape.
 
-Zéro dépendance — Python pur.
+Zéro dépendance — Python pur. Version C++ également disponible.
 
 ---
+## Compilation (version C++)
+```bash
+# GCC
+g++ -std=c++17 -O2 -o gerber_tool gerber_tool.cpp
+
+# Clang (macOS)
+clang++ -std=c++17 -O2 -o gerber_tool gerber_tool.cpp
+```
+L'utilisation est identique à la version Python
 
 ## Utilisation
 
