@@ -39,11 +39,11 @@ Le fichier `.gerber_info.json` correspondant doit exister (créé à l'étape pr
 
 Si l'output est omis : `board_EDIT.GTO`
 
-### Auto-détection
+### Auto-détection (encore plus simple & rapide)
 
 ```bash
-python3 gerber_tool.py board.GTO              # → mode --svg
-python3 gerber_tool.py board.GTO.svg          # → mode --gerber
+python3 gerber_tool.py board.GTO              # = mode --svg, va créér un SVG depuis le gerber
+python3 gerber_tool.py board.GTO.svg          # = mode --gerber, va recréer le gerber depuis le SVG
 ```
 
 ---
@@ -51,11 +51,11 @@ python3 gerber_tool.py board.GTO.svg          # → mode --gerber
 ## Workflow type
 
 ```
-1.  python3 gerber_tool.py --svg board.GTO --outline board.GKO
+1.  python3 gerber_tool.py board.GTO
 2.  Ouvrir board.GTO.svg dans Inkscape
 3.  Dessiner dans le calque "EDIT" (logos, texte, formes…)
 4.  Sauvegarder
-5.  python3 gerber_tool.py --gerber board.GTO.svg
+5.  python3 gerber_tool.py board.GTO.svg
 6.  → board_EDIT.GTO prêt pour le fabricant
 ```
 
@@ -98,7 +98,7 @@ Le calque outline `[REF] Contour PCB` est verrouillé et ignoré à la reconvers
 
 ## rename_gerbers.sh
 
-Script utilitaire pour renommer les fichiers Gerber EagleCad vers des extensions standard reconnues par la plupart des outils.
+Script utilitaire (MAC OS) pour renommer les fichiers Gerber EagleCad vers des extensions standard reconnues par la plupart des outils.
 
 ```bash
 ./rename_gerbers.sh ./gerbers/
